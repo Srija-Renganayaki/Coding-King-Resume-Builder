@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.jpeg" type="jpeg/image">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>Resume Builder</h1>
+        <img src="image/logo.jpeg" alt="Resume logo" title="Resume logo" width="250">
+       
+        <!-- User Registration (Optional) -->
+        <div id="registrationForm">
+            <h2>User Registration</h2>
+            <form id="registration">
+                <!-- Add registration form fields here -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- Resume Templates -->
+        <div id="templateSelection">
+            <h2>Choose a Template</h2>
+            <select id="templateSelector">
+                <!-- Add template options dynamically -->
+                <option value="template1">Template 1</option>
+
+                <option value="template2">Template 2</option>
+
+                <option value="template3">Template 3</option>
+
+                <option value="template4">Template 4</option>
+            </select>
+        </div>
+        <section id="Template 1">Template-1</section>
+        <figure>
+            <img src="image/T1.jpeg" alt="Template 1"
+                 width="200" height="200" title="Template 1">
+            </figure>
+        <section id="Template 2">Template-2</section>
+        <figure>
+            <img src="image/T2.jpeg" alt="Template 2"
+                     width="200" height="200" title="Template 2">   
+            </figure>
+        <section id="Template 3">Template-3</section>
+        <figure>
+            <img src="image/T3.jpeg" alt="Template 3"
+                         width="200" height="200" title="Template 3">  
+            </figure>
+        <section id="Template 4">Template-4</section>
+        <figure>
+            <img src="image/T4.jpeg" alt="Template 4"
+                         width="200" height="200" title="Template 4" >
+                </figure>
+
+        <!-- Sections and Fields -->
+        <div id="resumeForm">
+            <h2>Resume Information</h2>
+            <form id="resume">
+                <!-- Add resume form fields here -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="LinkedIn">LinkedIn Id:</label>
+                <input type="Link" id="Link" name="LinkrdIn Id" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" rows="4" required></textarea>
+                
+                <label for="workExperience">Work Experience:</label>
+                <textarea id="workExperience" name="workExperience" rows="4" required></textarea>
+                
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+                
+                <button type="button" onclick="previewResume()">Preview</button>
+
+            </form>
+        </div>
+
+        <!-- Preview Mode -->
+        <div id="previewContainer" class="preview-container">
+            <h2>Preview</h2>
+            <!-- Preview content will be dynamically inserted here -->
+        </div>
+
+        <!-- Download and Export -->
+        <div id="downloadOptions">
+            <h2>Download Resume</h2>
+            <button onclick="downloadResume('pdf')">Download as PDF</button>
+            <button onclick="downloadResume('word')">Download as Word</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <footer>
+        <p>
+        <a href="#"> Back To Top</a> 
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
